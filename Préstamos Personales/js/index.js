@@ -124,17 +124,17 @@ $('#telefono').on('keyup', function () {
     var texto = '';
     var numero = /^[0-9]+$/;
     var ultimodigito = id.charAt(id.length - 1);
-    if (id.length != 8) {
+    /*if (id.length != 8) {
         texto = 'Ingrese un número válido';
-    }
+    }*/
     if (!numero.test(id)) {
         $(this).val(id.replace(ultimodigito, ''));
         texto = 'Ingrese un número válido';
     }
-    var primero = id.substr(0, 1);
+    /*var primero = id.substr(0, 1);
     if (primero != 2 && primero != 8 && primero != 7 && primero != 6) {
         texto = 'Ingrese un número válido';
-    }
+    }*/
 
 
     $('#errorTel').text(texto);
@@ -233,28 +233,28 @@ $('#btnSolicitar').on('click', function () {
     }
 
     texto = '';
-    if (telefono.length != 8) {
+    /*if (telefono.length != 8) {
         texto = 'Ingrese un número válido';
         $('#errorTel').text(texto);
         $('#errorTel').removeClass('d-none');
         return false;
-    }
+    }*/
     if (!numero.test(telefono)) {
         texto = 'Ingrese un número válido';
         $('#errorTel').text(texto);
         $('#errorTel').removeClass('d-none');
         return false;
     }
-    var primero = telefono.substr(0, 1);
+   /* var primero = telefono.substr(0, 1);
     if (primero != 2 && primero != 8 && primero != 7 && primero != 6) {
         texto = 'Ingrese un número válido';
         $('#errorTel').text(texto);
         $('#errorTel').removeClass('d-none');
         return false;
-    }
+    }*/
 
     texto = '';
-    var expreCor = /^([a-zA-Z0-9\_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z]{2,63})+$/;
+    var expreCor = /^([a-zA-Z0-9\_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z]{2,160})+$/;
     if (!expreCor.test(email)) {
         texto = 'Ingrese un correo válido';
         $('#errorEmail').text(texto);
