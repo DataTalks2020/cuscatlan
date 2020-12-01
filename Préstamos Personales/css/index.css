@@ -35,6 +35,11 @@ label{
     font-size: 15px;
     font-weight: bold;
 }
+.texto-gracias{
+    position: absolute;
+    left: 30%; 
+    top: 40%;  
+}
 @media (max-width: 1400px){
 
 }
