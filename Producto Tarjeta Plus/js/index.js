@@ -178,7 +178,7 @@ $('#btnSolicitar').on('click', function () {
     }
     texto = '';
     if (tipo == '' || tipo == 0 || tipo.length == 0) {
-        texto = 'Seleccione un Tipo de indentificación';
+        texto = 'Seleccione un Tipo de identificación';
         $('#errorTipoIden').text(texto);
         $('#errorTipoIden').removeClass('d-none');
         return false;
