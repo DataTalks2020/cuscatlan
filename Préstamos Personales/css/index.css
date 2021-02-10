@@ -14,6 +14,7 @@ body, html{
 }
 label{
     font-size: 14px;
+    color: #2f586e;
 }
 .form-control { 
     height: auto; 
@@ -35,6 +36,7 @@ h3{
     line-height: 22px;
     font-weight: 600;
     margin-bottom: 0;
+    color: #2f586e;
 }
 .text-danger{
 }
