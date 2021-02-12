@@ -66,14 +66,14 @@ $('#identificacion').on('keyup', function () {
     }
     if (tipo == 'DUI') {
         if (id.length != 9) {
-            texto = 'Ingrese una cédula válida';
+            texto = 'Ingrese una identificación válida';
             $('#errorIden').removeClass('d-none');
             $('#emailHelp').text('Por favor ingresar sin guiones, ejemplo: 012345678');
         }
         if (!numero.test(id)) {
             $('#identificacion').val(id.replace(ultimodigito, ''));
             $('#errorIden').removeClass('d-none');
-            texto = 'Ingrese una cédula válida';
+            texto = 'Ingrese una identificación válida';
             $('#emailHelp').text('Formato 101230123 sin espacios *');
         }
         if (id.length == 0 || id == '') {
@@ -82,13 +82,13 @@ $('#identificacion').on('keyup', function () {
     }
     if (tipo == 'NIT') {
         if (id.length != 14) {
-            texto = 'Ingrese una cédula válida';
+            texto = 'Ingrese una identificación válida';
             $('#errorIden').removeClass('d-none');
             $('#emailHelp').text('Por favor ingresar sin guiones, ejemplo: 01234567891234');
         }
         if (!numero.test(id)) {
             $('#identificacion').val(id.replace(ultimodigito, ''));
-            texto = 'Ingrese una cédula válida';
+            texto = 'Ingrese una identificación válida';
             $('#errorIden').removeClass('d-none');
             $('#emailHelp').text('Por favor ingresar sin guiones, ejemplo: 01234567891234');
         }
